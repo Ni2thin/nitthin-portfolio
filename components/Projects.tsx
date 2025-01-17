@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa6";
 import Image from "next/image";
 import ComputerVision from "@/public/images/cv main.png";
-import Steganography from "@public/images/ invisi-image main.png;
+import Steganography from "@public/images/ invisi-image main.png";
 import GestureRPS from "@/public/images/RPS main.png";
 import Link from "next/link";
 
