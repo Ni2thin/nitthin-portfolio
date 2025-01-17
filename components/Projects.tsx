@@ -31,6 +31,7 @@ const projects = [
     description:
       "A Rock-Paper-Scissors game featuring real-time hand gesture recognition using OpenCV and MediaPipe, offering seamless user interaction.",
     image: GestureRPS,
+    liveLink: "https://invisi-image.vercel.app",
     githubLink: "https://github.com/Ni2thin/GestuRPS",
     tags: ["OpenCV", "MediaPipe", "Python", "Real-time AI"],
   },
