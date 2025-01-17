@@ -17,7 +17,7 @@ import MorphingText from "./ui/morphing-text";
 import SparklesText from "./ui/sparkles-text";
 
 export default function Hero() {
-  const texts = ["Full Stack Developer", "ML Enthusiast"];
+  const texts = ["ML Engineer", "Qubits Enthusiast"];
 
   return (
     <div className="h-screen relative bg-[#0e0e0e] overflow-hidden flex flex-col items-center justify-center px-4">
@@ -80,7 +80,7 @@ export default function Hero() {
       <GridBeam className="flex items-center justify-center flex-col max-w-lg h-1/2">
         <div>
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 relative z-10 text-center font-recoleta"> Tanishka Deep </h1>
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 relative z-10 text-center font-recoleta"> Nitthin Kumar </h1>
           <MorphingText
             texts={texts}
             className="text-xl lg:text-2xl text-neutral-400 mb-4 relative z-10 font-medium text-center"
