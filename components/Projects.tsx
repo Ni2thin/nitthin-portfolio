@@ -1,10 +1,8 @@
 import { FaGithub } from "react-icons/fa6";
 import Image from "next/image";
-import Regal from "@/public/images/regal.png";
-import Bytes from "@/public/images/bytes.png";
-import ContiqAI from "@/public/images/contiqai.png";
-import Chattr from "@/public/images/chattr.png";
-import Page from "@/public/images/page.png";
+import ComputerVision from "@/public/images/cv main.png";
+import Steganography from "@/public/images/invisi-image main.png";
+import GestureRPS from "@/public/images/RPS main.png";
 import Link from "next/link";
 
 const projects = [
@@ -23,7 +21,7 @@ const projects = [
     description:
       "A lightweight and interactive visual steganography tool for securely hiding messages within images and extracting them effortlessly.",
     image: Steganography,
-    liveLink: "https://invisiimage.vercel.app/",
+    liveLink: "https://invisi-image.vercel.app",
     githubLink: "https://github.com/Ni2thin/InvisiImage-A-Visual-Steganography-Tool",
     tags: ["JavaScript", "HTML", "CSS", "Web Security"],
   },
@@ -33,7 +31,6 @@ const projects = [
     description:
       "A Rock-Paper-Scissors game featuring real-time hand gesture recognition using OpenCV and MediaPipe, offering seamless user interaction.",
     image: GestureRPS,
-    liveLink: "https://gesture-rps.vercel.app/",
     githubLink: "https://github.com/Ni2thin/GestuRPS",
     tags: ["OpenCV", "MediaPipe", "Python", "Real-time AI"],
   },
