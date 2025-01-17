@@ -9,33 +9,13 @@ const About: React.FC = () => {
           About Me
         </h2>
         <p className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
-          I am Nitthin, a <b>machine learning engineer</b> with a strong passion for{" "}
-          <b>AI & ML</b>. Currently, I am pursuing a B.tech. in Artificial Intelligence & Data Science
-          at Kalaignarkarunanidhi Institute of Technology (CGPA: <b>8.5/10</b>). I specialize in{" "}
-          <b>C, OpenCv, Python, and Scikit-learn </b>, building efficient and user-centric applications.
-          <br />
-          My journey includes hands-on experiences during internships, such as:
-          <ul className="list-disc ml-5 mt-2">
-            <li>
-              Deep learning projects at <b>Ether Services</b>, working on YOLO-based object detection and LSTM-powered sentiment analysis.
-            </li>
-            <li>
-              Deploying AI models on cloud platforms like AWS and Azure during training at <b>Appex Technologies</b>.
-            </li>
-          </ul>
-          <br />
-          Some of my notable projects include:
-          <ul className="list-disc ml-5 mt-2">
-            <li><b>InvisiImage</b>: A visual steganography tool for securely hiding messages in images.</li>
-            <li>
-              <b>Gesture Recognition for RPS</b>: A Rock-Paper-Scissors game with real-time hand gesture recognition using MediaPipe.
-            </li>
-            <li>
-              <b>Computer Vision Applications</b>: Real-time object detection, tracking, and motion analysis with OpenCV.
-            </li>
-          </ul>
-          <br />
-          I am proficient in frameworks like TensorFlow, PyTorch, and Django, and actively participate in coding contests on CodeChef. I bring a blend of technical skills, innovation, and continuous learning to every endeavor.
+          I am Nitthin, a <b>Machine Learning Engineer</b> and a B.Tech student specializing in <b>Artificial Intelligence & Data Science</b> (CGPA: <b>8.5/10</b>) at Kalaignarkarunanidhi Institute of Technology. My expertise lies in <b>C, OpenCV, Python, and Scikit-learn</b>, with a strong focus on developing innovative and user-centric applications. I am passionate about leveraging technology to solve real-world challenges.
+        </p>
+        <p className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
+          I have gained hands-on experience through internships, including working on <b>YOLO-based object detection</b> and <b>LSTM-powered sentiment analysis</b> during my tenure at <b>Ether Services</b>. At <b>Appex Technologies</b>, I honed my skills in deploying AI models on cloud platforms like <b>AWS</b> and <b>Azure</b>. Notable projects I’ve developed include <b>InvisiImage</b> (a visual steganography tool), <b>Gesture Recognition for RPS</b> (real-time hand gesture recognition using MediaPipe), and <b>Computer Vision Applications</b> (real-time object detection, tracking, and motion analysis with OpenCV).
+        </p>
+        <p className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
+          Alongside my machine learning expertise, I am actively exploring <b>quantum computing</b> with <b>Qiskit</b>. I am proficient in frameworks like <b>TensorFlow</b>, <b>PyTorch</b>, and <b>Django</b>, and I frequently engage in coding contests on <b>CodeChef</b>. With a passion for continuous learning, innovation, and a strong technical foundation, I am driven to make meaningful contributions to the tech industry.
         </p>
       </WobbleCard>
     </div>
