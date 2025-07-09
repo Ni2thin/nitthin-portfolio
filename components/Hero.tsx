@@ -15,8 +15,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import MorphingText from "./ui/morphing-text";
 import SparklesText from "./ui/sparkles-text";
+import TextAnimation from "./ui/text-animation";
 
 export default function Hero() {
+  const texts = ["ML Engineer", "Qubits Enthusiast"];
   const texts = ["Computer Vision Engineer", "ML Enthusiast"];
 
   return (
