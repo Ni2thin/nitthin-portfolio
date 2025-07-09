@@ -65,19 +65,61 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
+  const [isClient, setIsClient] = useState(false);
   const { theme } = useTheme();
 
   useEffect(() => {
-    fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
-  }, [iconSlugs]);
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+    
+    const fetchIcons = async () => {
+      try {
+        const iconData = await fetchSimpleIcons({ slugs: iconSlugs });
+        setData(iconData);
+      } catch (error) {
+        console.warn("Failed to fetch icons:", error);
+        // Fallback: create basic icon data structure
+        const fallbackData = {
+          simpleIcons: iconSlugs.reduce((acc, slug) => {
+            acc[slug] = {
+              title: slug,
+              hex: "#000000",
+              path: "",
+              slug: slug,
+            };
+            return acc;
+          }, {} as Record<string, SimpleIcon>),
+          allIcon: iconSlugs.reduce((acc, slug) => {
+            acc[slug] = {
+              title: slug,
+              hex: "#000000",
+              slug: slug,
+            };
+            return acc;
+          }, {} as Record<string, { title: string; hex: string; slug: string }>),
+        };
+        setData(fallbackData);
+      }
+    };
+
+    fetchIcons();
+  }, [iconSlugs, isClient]);
 
   const renderedIcons = useMemo(() => {
-    if (!data) return null;
+    if (!data || !isClient) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "dark"),
     );
-  }, [data, theme]);
+  }, [data, theme, isClient]);
+
+  // Don't render anything on server-side to prevent hydration mismatch
+  if (!isClient) {
+    return <div className="w-full h-64 flex items-center justify-center">Loading...</div>;
+  }
 
   return (
     // @ts-ignore

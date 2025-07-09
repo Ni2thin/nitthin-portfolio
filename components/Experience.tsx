@@ -12,38 +12,42 @@ const Experience: React.FC = () => {
         <div className="flex justify-between flex-col sm:flex-row text-neutral-300">
           <div>
             <h3 className="text-xl xl:text-2xl font-bold text-white">
+              Innovate Intern
+            </h3>
+            <p className="sm:text-lg italic">AI & ML Intern</p>
+          </div>
+          <div>
+            <p className="sm:text-right text-base xl:text-lg">
+              14th Apr – 26th May 2025
+            </p>
+          </div>
+        </div>
+
+        <ul className="mt-4 text-base xl:text-lg font-medium space-y-2">
+          <li>• Completed a 6-week internship focused on real-time object detection and deep learning fundamentals.</li>
+          <li>• Developed and deployed an SSD-based object detection model using a custom dataset.</li>
+          <li>• Explored bounding box regression, non-max suppression, and model optimization using TensorFlow and Keras.</li>
+        </ul>
+
+        <div className="flex justify-between flex-col sm:flex-row text-neutral-300 mt-8">
+          <div>
+            <h3 className="text-xl xl:text-2xl font-bold text-white">
               Ether Services
             </h3>
             <p className="sm:text-lg italic">Deep Learning Intern</p>
           </div>
           <div>
             <p className="sm:text-right text-base xl:text-lg">
-              July 2024
+              8th - 26th July 2024
             </p>
           </div>
         </div>
 
-        <p className="mt-4 text-base xl:text-lg font-medium">
-          Acquired hands-on experience with Neural Networks, CNNs, RNNs, and GANs, applying these concepts in projects like object detection with YOLO and sentiment analysis using LSTMs. Learned to preprocess data and optimize AI models for practical deployment.
-        </p>
-
-        <div className="flex justify-between flex-col sm:flex-row text-neutral-300 mt-8">
-          <div>
-            <h3 className="text-xl xl:text-2xl font-bold text-white">
-              Appex Technologies
-            </h3>
-            <p className="sm:text-lg italic">ML Training</p>
-          </div>
-          <div>
-            <p className="sm:text-right text-base xl:text-lg">
-              February 2024
-            </p>
-          </div>
-        </div>
-
-        <p className="mt-4 text-base xl:text-lg font-medium">
-          Enhanced my understanding of deploying AI models on cloud platforms such as AWS and Azure. Explored techniques for creating scalable, efficient, and secure cloud-based machine learning solutions.
-        </p>
+        <ul className="mt-4 text-base xl:text-lg font-medium space-y-2">
+          <li>• Gained in-depth knowledge of Deep Learning concepts, including Neural Networks, CNNs, RNNs, and GANs, with a focus on practical applications.</li>
+          <li>• Completed hands-on projects, such as object detection using YOLO and sentiment analysis with LSTMs, to reinforce theoretical understanding.</li>
+          <li>• Learned to use Deep Learning frameworks and preprocess data efficiently, applying knowledge to build and optimize AI models.</li>
+        </ul>
       </WobbleCard>
     </div>
   );

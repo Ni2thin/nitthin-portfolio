@@ -1,7 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['assets.aceternity.com'], // Add the hostname here
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+            },
+        ],
+    },
+    compress: true,
+    poweredByHeader: false,
+    reactStrictMode: true,
+    swcMinify: true,
+    compiler: {
+        removeConsole: process.env.NODE_ENV === 'production',
+    },
+    experimental: {
+        optimizeCss: true,
+        optimizePackageImports: ['react-icons'],
     },
 };
 

@@ -8,35 +8,19 @@ const About: React.FC = () => {
         <h2 className="text-3xl font-extrabold mb-4 text-left font-recoleta">
           About Me
         </h2>
-        <p className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
-          I am Nitthin, a <b>machine learning engineer</b> with a strong passion for{" "}
-          <b>AI & ML</b>. Currently, I am pursuing a B.tech. in Artificial Intelligence & Data Science
-          at Kalaignarkarunanidhi Institute of Technology (CGPA: <b>8.5/10</b>). I specialize in{" "}
-          <b>C, OpenCv, Python, and Scikit-learn </b>, building efficient and user-centric applications.
-          <br />
-          My journey includes hands-on experiences during internships, such as:
-          <ul className="list-disc ml-5 mt-2">
-            <li>
-              Deep learning projects at <b>Ether Services</b>, working on YOLO-based object detection and LSTM-powered sentiment analysis.
-            </li>
-            <li>
-              Deploying AI models on cloud platforms like AWS and Azure during training at <b>Appex Technologies</b>.
-            </li>
-          </ul>
-          <br />
-          Some of my notable projects include:
-          <ul className="list-disc ml-5 mt-2">
-            <li><b>InvisiImage</b>: A visual steganography tool for securely hiding messages in images.</li>
-            <li>
-              <b>Gesture Recognition for RPS</b>: A Rock-Paper-Scissors game with real-time hand gesture recognition using MediaPipe.
-            </li>
-            <li>
-              <b>Computer Vision Applications</b>: Real-time object detection, tracking, and motion analysis with OpenCV.
-            </li>
-          </ul>
-          <br />
-          I am proficient in frameworks like TensorFlow, PyTorch, and Django, and actively participate in coding contests on CodeChef. I bring a blend of technical skills, innovation, and continuous learning to every endeavor.
-        </p>
+        <div className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
+          <p>
+            I'm Nitthin Kumar, a B.Tech student in Artificial Intelligence and Data Science at Kalaignarkarunanidhi Institute of Technology, Coimbatore. I'm deeply intrigued by how machines interpret the visual world—and I'm exploring this through hands-on computer vision projects and model building.
+          </p>
+          
+          <p className="mt-4">
+            I've trained an SSD-based object detection model on a custom dataset, implementing bounding box regression and non-max suppression in TensorFlow. I've also worked with R-CNN on the PASCAL VOC2007 dataset to understand region-based detection pipelines and multi-stage classification.
+          </p>
+          
+          <p className="mt-4">
+            For image enhancement, I developed a U-Net autoencoder to colorize black-and-white cartoon images, achieving an SSIM of 0.917006 and an MSE of 0.006378, with performance improved through hyperparameter tuning and custom preprocessing. I also built a real-time Rock-Paper-Scissors game using OpenCV and MediaPipe, optimizing gesture classification to ensure responsiveness under dynamic lighting and background noise.
+          </p>
+        </div>
       </WobbleCard>
     </div>
   );

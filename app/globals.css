@@ -27,6 +27,14 @@ body {
   /* Firefox */
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
 }
 
 html::-webkit-scrollbar,

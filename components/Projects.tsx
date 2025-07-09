@@ -1,10 +1,9 @@
 import { FaGithub } from "react-icons/fa6";
 import Image from "next/image";
-import Regal from "@/public/images/regal.png";
-import Bytes from "@/public/images/bytes.png";
-import ContiqAI from "@/public/images/contiqai.png";
-import Chattr from "@/public/images/chattr.png";
-import Page from "@/public/images/page.png";
+import ComputerVision from "@/public/images/cv main.png";
+import Steganography from "@/public/images/invisi-image-main.png";
+import GestureRPS from "@/public/images/rps-main.png";
+import SSDObjectDetection from "@/public/images/ssd.png";
 import Link from "next/link";
 
 const projects = [
@@ -19,11 +18,21 @@ const projects = [
   },
 
   {
+    title: "Real-Time Object Detection with SSD",
+    description:
+      "A high-performance object detection system using SSD, featuring real-time inference on webcam/video streams and optimized for MacOS with model quantization.",
+    image: SSDObjectDetection,
+    liveLink: "https://github.com/Ni2thin/Real-Time-SSD-Object-Detection",
+    githubLink: "https://github.com/Ni2thin/Real-Time-SSD-Object-Detection",
+    tags: ["TensorFlow", "OpenCV", "SSD", "COCO", "Real-time AI", "Python"],
+  },
+
+  {
     title: "InvisiImage",
     description:
       "A lightweight and interactive visual steganography tool for securely hiding messages within images and extracting them effortlessly.",
     image: Steganography,
-    liveLink: "https://invisiimage.vercel.app/",
+    liveLink: "https://invisi-image.vercel.app",
     githubLink: "https://github.com/Ni2thin/InvisiImage-A-Visual-Steganography-Tool",
     tags: ["JavaScript", "HTML", "CSS", "Web Security"],
   },
@@ -33,7 +42,7 @@ const projects = [
     description:
       "A Rock-Paper-Scissors game featuring real-time hand gesture recognition using OpenCV and MediaPipe, offering seamless user interaction.",
     image: GestureRPS,
-    liveLink: "https://gesture-rps.vercel.app/",
+    liveLink: "https://github.com/Ni2thin/GestuRPS",
     githubLink: "https://github.com/Ni2thin/GestuRPS",
     tags: ["OpenCV", "MediaPipe", "Python", "Real-time AI"],
   },
@@ -42,7 +51,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="max-w-6xl mx-auto mt-12 xl:mt-20 mb-12 px-6 sm:px-16">
+    <div id="projects" className="max-w-6xl mx-auto mt-12 xl:mt-20 mb-12 px-6 sm:px-16">
       <div className="font-extrabold text-3xl xl:text-4xl font-recoleta text-center">
         Projects
       </div>
@@ -53,21 +62,43 @@ const Projects = () => {
             className="bg-foreground border-neutral-600 border-2 rounded-xl p-4"
           >
             <div className="overflow-hidden rounded-lg">
+              {project.liveLink ? (
               <Link href={project.liveLink} target="_blank">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={800}
+                    height={450}
+                    loading="lazy"
+                    quality={75}
+                    className="rounded-lg hover:scale-110 transition-transform duration-500"
+                  />
+                </Link>
+              ) : (
                 <Image
                   src={project.image}
                   alt={project.title}
+                  width={800}
+                  height={450}
+                  loading="lazy"
+                  quality={75}
                   className="rounded-lg hover:scale-110 transition-transform duration-500"
                 />
-              </Link>
+              )}
             </div>
             <div className="flex justify-between items-center gap-2 pt-4 pb-2 px-3">
+              {project.liveLink ? (
               <Link
                 href={project.liveLink}
                 className="text-2xl font-bold font-inter"
               >
                 {project.title}
               </Link>
+              ) : (
+                <span className="text-2xl font-bold font-inter">
+                  {project.title}
+                </span>
+              )}
               <Link href={project.githubLink} target="_blank">
                 <FaGithub className="hover:scale-110 size-6" />
               </Link>

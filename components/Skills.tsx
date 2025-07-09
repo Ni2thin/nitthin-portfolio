@@ -14,21 +14,17 @@ const Skills = () => {
             <TechStackButton name="OpenCV" icon="bg-blue-400" />
             <TechStackButton name="TensorFlow" icon="bg-orange-300" />
             <TechStackButton name="PyTorch" icon="bg-red-400" />
-            <TechStackButton name="React" icon="bg-cyan-400" />
-            <TechStackButton name="Next.js" icon="bg-green-400" />
-            <TechStackButton name="JavaScript" icon="bg-yellow-300" />
-            <TechStackButton name="TypeScript" icon="bg-rose-400" />
-            <TechStackButton name="Node.js" icon="bg-orange-400" />
+            <TechStackButton name="MediaPipe" icon="bg-yellow-400" />
+            <TechStackButton name="Scikit-learn" icon="bg-orange-500" />
             <TechStackButton name="Docker" icon="bg-blue-500" />
             <TechStackButton name="Git" icon="bg-lime-200" />
-            <TechStackButton name="Tailwind CSS" icon="bg-lime-200" />
-            <TechStackButton name="PostgreSQL" icon="bg-teal-500" />
-            <TechStackButton name="MongoDB" icon="bg-green-500" />
-            <TechStackButton name="Prisma" icon="bg-pink-500" />
-            <TechStackButton name="C" icon="bg-violet-500" />
-            <TechStackButton name="C++" icon="bg-red-500" />
-            <TechStackButton name="Framer Motion" icon="bg-fuchsia-400" />
-            <TechStackButton name="MediaPipe" icon="bg-yellow-400" />
+            <TechStackButton name="NumPy" icon="bg-green-500" />
+            <TechStackButton name="Jupyter Notebook" icon="bg-purple-400" />
+            <TechStackButton name="Google Colab" icon="bg-yellow-500" />
+            <TechStackButton name="Langchain" icon="bg-blue-600" />
+            <TechStackButton name="n8n" icon="bg-green-600" />
+            <TechStackButton name="FastAPI" icon="bg-teal-400" />
+            <TechStackButton name="Flask" icon="bg-gray-400" />
           </div>
         </div>
 
