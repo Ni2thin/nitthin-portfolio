@@ -12,11 +12,11 @@ const About: React.FC = () => {
           </h2>
           <div className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
             <p>
-              I'm Nitthin Kumar, a B.Tech student in Artificial Intelligence and Data Science at Kalaignarkarunanidhi Institute of Technology, Coimbatore. I'm deeply intrigued by how machines interpret the visual world—and I'm exploring this through hands-on computer vision projects and model building.
+              I&apos;m Nitthin Kumar, a B.Tech student in Artificial Intelligence and Data Science at Kalaignarkarunanidhi Institute of Technology, Coimbatore. I&apos;m deeply intrigued by how machines interpret the visual world—and I&apos;m exploring this through hands-on computer vision projects and model building.
             </p>
             
             <p className="mt-4">
-              I've trained an SSD-based object detection model on a custom dataset, implementing bounding box regression and non-max suppression in TensorFlow. I've also worked with R-CNN on the PASCAL VOC2007 dataset to understand region-based detection pipelines and multi-stage classification.
+              I&apos;ve trained an SSD-based object detection model on a custom dataset, implementing bounding box regression and non-max suppression in TensorFlow. I&apos;ve also worked with R-CNN on the PASCAL VOC2007 dataset to understand region-based detection pipelines and multi-stage classification.
             </p>
             
             <p className="mt-4">

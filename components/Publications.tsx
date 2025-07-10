@@ -26,7 +26,7 @@ const Publications: React.FC = () => {
                 Presented at DELCON-2024, IEEE Conference ID: 9881197
               </p>
               <p className="text-sm text-gray-300 mb-3">
-                3rd Int'l Conf. on Advancing Technology for Sustainable Development, Nov 21–23, 2024, BVICAM, New Delhi
+                3rd Int&apos;l Conf. on Advancing Technology for Sustainable Development, Nov 21–23, 2024, BVICAM, New Delhi
               </p>
               <p className="text-gray-200">
                 Developed a Cosmology-Informed Neural Network (CINN) to classify ΛCDM vs. non-ΛCDM dark matter power spectra using data from ReACT. Achieved ~97% accuracy and successfully constrained cosmological parameters like f_R0 and w_0, showcasing CINNs as effective tools for model classification in cosmology.
