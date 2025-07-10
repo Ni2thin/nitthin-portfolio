@@ -1,12 +1,16 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.24.0",
@@ -14,7 +18,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "critters": "^0.0.23",
-    "framer-motion": "^11.15.0",
+    "framer-motion": "^11.18.2",
     "lucide-react": "^0.468.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "^14.2.20",
@@ -23,8 +27,11 @@
     "react-dom": "^18",
     "react-icon-cloud": "^4.1.4",
     "react-icons": "^5.4.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-tsparticles": "^2.12.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tsparticles": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",

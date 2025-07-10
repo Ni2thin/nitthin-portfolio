@@ -4,6 +4,7 @@ import { LuGithub } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiBuymeacoffee } from "react-icons/si";
 import { GridPatternDashed } from "./ui/GridPatternDashed";
+import ScrollFadeIn from "./ui/ScrollFadeIn";
 
 const socials = [
   {

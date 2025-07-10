@@ -18,7 +18,6 @@ import SparklesText from "./ui/sparkles-text";
 import TextAnimation from "./ui/text-animation";
 
 export default function Hero() {
-  const texts = ["ML Engineer", "Qubits Enthusiast"];
   const texts = ["Computer Vision Engineer", "ML Enthusiast"];
 
   return (
@@ -83,7 +82,12 @@ export default function Hero() {
         <div>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 relative z-10 text-center font-recoleta">
-            Nitthin Kumar
+            <TextAnimation 
+              text="Nitthin Kumar" 
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+              duration={2000}
+              interval={100}
+            />
           </h1>
           <MorphingText
             texts={texts}

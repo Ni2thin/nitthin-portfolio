@@ -5,6 +5,7 @@ import Steganography from "@/public/images/invisi-image-main.png";
 import GestureRPS from "@/public/images/rps-main.png";
 import SSDObjectDetection from "@/public/images/ssd.png";
 import Link from "next/link";
+import ScrollFadeIn from "./ui/ScrollFadeIn";
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
     image: SSDObjectDetection,
     liveLink: "https://github.com/Ni2thin/Real-Time-SSD-Object-Detection",
     githubLink: "https://github.com/Ni2thin/Real-Time-SSD-Object-Detection",
-    tags: ["TensorFlow", "OpenCV", "SSD", "COCO", "Real-time AI", "Python"],
+    tags: ["TensorFlow", "OpenCV", "SSD", "Real-time AI", "Python"],
   },
 
   {
@@ -52,18 +53,31 @@ const projects = [
 const Projects = () => {
   return (
     <div id="projects" className="max-w-6xl mx-auto mt-12 xl:mt-20 mb-12 px-6 sm:px-16">
-      <div className="font-extrabold text-3xl xl:text-4xl font-recoleta text-center">
-        Projects
-      </div>
+      <ScrollFadeIn>
+        <div className="font-extrabold text-3xl xl:text-4xl font-recoleta text-center">
+          Projects
+        </div>
+      </ScrollFadeIn>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-foreground border-neutral-600 border-2 rounded-xl p-4"
-          >
-            <div className="overflow-hidden rounded-lg">
-              {project.liveLink ? (
-              <Link href={project.liveLink} target="_blank">
+          <ScrollFadeIn key={index} delay={index * 0.15}>
+            <div
+              className="bg-foreground border-neutral-600 border-2 rounded-xl p-4"
+            >
+              <div className="overflow-hidden rounded-lg">
+                {project.liveLink ? (
+                <Link href={project.liveLink} target="_blank">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={800}
+                      height={450}
+                      loading="lazy"
+                      quality={75}
+                      className="rounded-lg hover:scale-110 transition-transform duration-500"
+                    />
+                  </Link>
+                ) : (
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -73,50 +87,40 @@ const Projects = () => {
                     quality={75}
                     className="rounded-lg hover:scale-110 transition-transform duration-500"
                   />
-                </Link>
-              ) : (
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={800}
-                  height={450}
-                  loading="lazy"
-                  quality={75}
-                  className="rounded-lg hover:scale-110 transition-transform duration-500"
-                />
-              )}
-            </div>
-            <div className="flex justify-between items-center gap-2 pt-4 pb-2 px-3">
-              {project.liveLink ? (
-              <Link
-                href={project.liveLink}
-                className="text-2xl font-bold font-inter"
-              >
-                {project.title}
-              </Link>
-              ) : (
-                <span className="text-2xl font-bold font-inter">
-                  {project.title}
-                </span>
-              )}
-              <Link href={project.githubLink} target="_blank">
-                <FaGithub className="hover:scale-110 size-6" />
-              </Link>
-            </div>
-            <div className="px-3 text-neutral-400 italic">
-              {project.description}
-            </div>
-            <div className="flex flex-wrap gap-2 px-3 pt-4 text-xs lg:text-sm font-medium mb-2 items-center justify-start">
-              {project.tags.map((tag, tagIndex) => (
-                <div
-                  key={tagIndex}
-                  className="bg-[#2e2e2e] px-3 py-0.5 w-fit rounded-full"
+                )}
+              </div>
+              <div className="flex justify-between items-center gap-2 pt-4 pb-2 px-3">
+                {project.liveLink ? (
+                <Link
+                  href={project.liveLink}
+                  className="text-2xl font-bold font-inter"
                 >
-                  {tag}
-                </div>
-              ))}
+                  {project.title}
+                </Link>
+                ) : (
+                  <span className="text-2xl font-bold font-inter">
+                    {project.title}
+                  </span>
+                )}
+                <Link href={project.githubLink} target="_blank">
+                  <FaGithub className="hover:scale-110 size-6" />
+                </Link>
+              </div>
+              <div className="px-3 text-neutral-400 italic">
+                {project.description}
+              </div>
+              <div className="flex flex-wrap gap-2 px-3 pt-4 text-xs lg:text-sm font-medium mb-2 items-center justify-start">
+                {project.tags.map((tag, tagIndex) => (
+                  <div
+                    key={tagIndex}
+                    className="bg-[#2e2e2e] px-3 py-0.5 w-fit rounded-full"
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </ScrollFadeIn>
         ))}
       </div>
     </div>
